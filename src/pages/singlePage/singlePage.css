@@ -1,0 +1,57 @@
+/* Default styles for mobile devices */
+.single-page-div {
+    margin: 5rem;
+  }
+
+  .main-div {
+    margin: 0px 5rem 0px 5rem;
+  }
+
+  .details-text {
+    color: silver
+  }
+
+  .restuarant-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Styles for tablets (portrait) and up */
+  @media (min-width: 768px) {
+    .single-page-div {
+      margin: 5rem;
+    }
+
+    .main-div {
+        margin: 0px 5rem 0px 5rem;
+    }
+
+    .details-text {
+        color: silver
+    }
+
+    .restuarant-details {
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+  
+  /* Styles for laptops and up */
+  @media screen and (min-width: 1024px) {
+    .single-page-div {
+      margin: 5rem;
+    }
+
+    .main-div {
+        margin: 0px 5rem 0px 5rem;
+    }
+
+    .details-text {
+        color: silver
+    }
+
+    .restuarant-details {
+        display: flex;
+        justify-content: space-between;
+    }
+  }

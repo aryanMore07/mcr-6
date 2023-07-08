@@ -2,11 +2,12 @@ import React, { useContext } from 'react';
 import './landingPage.css';
 import { DataContext } from '../../contexts/DataContext';
 import { Button } from '@mui/material';
+import { useNavigate } from 'react-router';
 
 const LandingPage = () => {
 
+    const navigate = useNavigate();
     const { state, dispatch, filterData } = useContext(DataContext);
-
     const { cuisineData } = state;
 
     return (
@@ -34,7 +35,9 @@ const LandingPage = () => {
                         const { id, name, menu } = restuarant
                         return (
                             <div className='menu-card' key={id}>
-                                <h2>{name}</h2>
+                                <h2 style={{ cursor: 'pointer' }} onClick={() => {
+                                    navigate(`/restuarant/${id}`)
+                                }}>{name}</h2>
                                 <div className='menu-items'>
                                     {
                                         menu.map((item, index) => {
@@ -42,7 +45,7 @@ const LandingPage = () => {
                                             return (
                                                 <div className='menu-details' key={index}>
                                                     <img src={imgSrc} alt={name} className='menu-imgs' />
-                                                    <div style={{paddingLeft: '15px'}}>
+                                                    <div style={{ paddingLeft: '15px' }}>
                                                         <p><b>{name}</b></p>
                                                         <p>Rs {price} for {qty}</p>
                                                         <p>{restuarant.name}</p>
