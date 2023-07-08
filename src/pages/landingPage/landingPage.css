@@ -1,0 +1,139 @@
+/* Default styles for mobile devices */
+
+.landing-page-div {
+  margin: 0px 5rem 0px 5rem;
+}
+
+.landindPage-header {
+  text-align: center;
+}
+.select-btns {
+  display: flex;
+  justify-content: center;
+  margin: 0px 15px 0px 15px;
+}
+.btns {
+  margin: 0px 15px 0px 15px;
+}
+
+.menu-card {
+  width: 100%;
+  height: max-content;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(1, 300px);
+  gap: 2rem;
+}
+
+.menu-details {
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-details:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.menu-imgs {
+  width: -webkit-fill-available;
+  height: 250px;
+}
+
+/* Styles for tablets (portrait) and up */
+
+@media (min-width: 768px) {
+  .landing-page-div {
+    margin: 0px 5rem 0px 5rem;
+  }
+
+  .landindPage-header {
+    text-align: center;
+  }
+
+  .select-btns {
+    display: flex;
+    justify-content: center;
+    margin: 0px 15px 0px 15px;
+  }
+  .btns {
+    margin: 0px 15px 0px 15px;
+  }
+
+  .menu-card {
+    width: 100%;
+    height: max-content;
+  }
+
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 2rem;
+  }
+
+  .menu-details {
+    border: 2px solid #dcdcdc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .menu-details:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+  .menu-imgs {
+    width: -webkit-fill-available;
+    height: 250px;
+  }
+}
+
+/* Styles for laptops and up */
+
+@media screen and (min-width: 1024px) {
+  .landing-page-div {
+    margin: 0px 5rem 0px 5rem;
+  }
+
+  .landindPage-header {
+    text-align: center;
+  }
+  .select-btns {
+    display: flex;
+    justify-content: center;
+    margin: 0px 15px 0px 15px;
+  }
+  .btns {
+    margin: 0px 15px 0px 15px;
+  }
+
+  .menu-card {
+    width: 100%;
+    height: max-content;
+  }
+
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 2rem;
+  }
+
+  .menu-details {
+    border: 2px solid #dcdcdc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .menu-details:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+  .menu-imgs {
+    width: -webkit-fill-available;
+    height: 250px;
+  }
+}
